@@ -16,10 +16,11 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include  # Add 'include' if missing
 
-    urlpatterns = [
+urlpatterns = [
     path('admin/', admin.site.urls),
-    path('employee/',include("emprecord.urls"))
+    path('employee/', include("emprecord.urls"))  # No extra indentation
 ]
+
 
