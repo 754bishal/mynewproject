@@ -6,3 +6,7 @@ urls.py - templates - views.py - model.py
 
 development flow:
 model.py - view.py - templates - urls.py
+
+Define models.py
+make migrations, migrate
+
